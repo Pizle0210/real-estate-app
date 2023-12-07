@@ -5,14 +5,14 @@ import { SignInScreen } from "./Screens/SignInScreen";
 import { SignOutScreen } from "./Screens/SignOutScreen";
 import { ErrorPage } from "./Screens/ErrorPage";
 import { ProfileScreen } from "./Screens/ProfileScreen";
-import { Navigation } from "./components/Navigation";
+import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen justify-between">
       <Router>
-        <Navigation />
+        <Header />
         <Routes>
           <Route path="/" element={<HomeScreen />} />
           <Route path="/about" element={<AboutScreen />} />
